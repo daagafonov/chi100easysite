@@ -1,14 +1,15 @@
 {
-  "name": "chi100easysite-2",
+  "name": "chi100easysite",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
+    "start": "serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
     "build": "vue-cli-service build --dest _static",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "serve": "^11.3.2",
     "vue": "^3.0.0-0"
   },
   "devDependencies": {
