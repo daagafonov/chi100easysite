@@ -1,26 +1,28 @@
 <template>
-<!--  <img alt="Vue logo" src="./assets/logo.png">-->
-  <Index msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <component :is="layout">
+      <router-view></router-view>
+    </component>
+  </div>
 </template>
 
-<script>
-import Index from './components/Index.vue';
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
 
-export default {
-  name: 'App',
+const defaultLayout = "default";
+
+@Options({
   components: {
-    Index,
+    // Index
+  }
+})
+export default class App extends Vue {
+  get layout() {
+    return `${this.$route.meta.layout || defaultLayout}-layout`;
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+
 </style>

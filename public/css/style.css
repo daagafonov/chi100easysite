@@ -47,17 +47,22 @@ video#bgvid {
     top: 0;
     left: 0;
     background-color: rgba(49, 70, 104, 0.44);
-    background-image: url(../dots-u96-fr2.png);
+    background-image: url(images/dots-u96-fr2.png);
     z-index: 1;
 }
 
-.navbar-default {
-    background-color: transparent;
-    border: 0;
-}
+/*.navbar-default {*/
+/*    background-color: transparent;*/
+/*    border: 0;*/
+/*}*/
 
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
+/*.navbar-default .navbar-nav>li>a {*/
+/*    color: #fff;*/
+/*    padding: 50px 20px 0;*/
+/*}*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
     padding: 50px 20px 0;
 }
 
