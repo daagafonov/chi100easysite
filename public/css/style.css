@@ -381,7 +381,7 @@ p.medium-weight {
 }
 
 .services-block {
-    background-image: url(../images/blue-bg.png);
+    background-image: url('../images/blue-bg.png');
     background-attachment: fixed;
     background-size: cover;
 }
