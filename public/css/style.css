@@ -990,6 +990,7 @@ p.medium-weight {
 
     .make-call a {
         width: 45px;
+        display: none;
     }
 
     .make-call span:last-child {
@@ -1083,12 +1084,12 @@ p.medium-weight {
     }
 
     .chisto-prosto-head {
-        background-image: url(../video/snapshots/clothing.jpg);
+        background-image: url(../images/clothing.jpg);
         background-size: cover;
     }
 
     .page-logo {
-        margin: auto;
+        /* margin: auto; */
     }
 
     .navbar {
