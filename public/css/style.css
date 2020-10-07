@@ -320,6 +320,11 @@ section.stage3 {
     color: #fff;
 }
 
+.chisto-prosto-head {
+    background-image: url(../images/clothing.jpg);
+    background-size: cover;
+}
+
 .chisto-prosto-anchors div {
     display: inline-block;
     margin: 0 30px;
@@ -874,6 +879,11 @@ p.medium-weight {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .make-call {
+        display: none;
+    }
+
     .header-menu ul {
         margin: 0;
     }
