@@ -2,19 +2,19 @@
 
   <div class="chisto-prosto-head">
     <div class="header">
-      <nav class="navbar navbar-default navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-default navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand page-logo" href="#">
             <img src="images/logo_chisto-prosto_white-01.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1"
-                  aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">О НАС</a></li>
               <li class="nav-item"><a class="nav-link" href="#service">УСЛУГИ</a></li>
               <li class="nav-item"><a class="nav-link" href="#shares">АКЦИИ</a></li>

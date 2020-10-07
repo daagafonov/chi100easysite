@@ -6,7 +6,8 @@ import "./registerServiceWorker";
 import DefaultLayout from "@/layouts/default.vue";
 import Default1Layout from "@/layouts/default1.vue";
 
-// import Alert from 'bootstrap/js/dist/alert';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.esm.min';
 
 createApp(App)
     .component("default-layout", DefaultLayout)
