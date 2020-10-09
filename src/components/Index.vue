@@ -1,25 +1,25 @@
 <template>
-  <div>
-    <video autoplay="" loop="" poster="images/clothing.jpg" id="bgvid">
-      <source src="images/clothing.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
-      <source src="images/clothing.webm" type="video/webm">
-      <source src="images/clothing.mp4" type="video/mp4">
-    </video>
+    <div>
+        <video autoplay="" loop="" poster="images/clothing.jpg" id="bgvid">
+            <source src="images/clothing.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+            <source src="images/clothing.webm" type="video/webm">
+            <source src="images/clothing.mp4" type="video/mp4">
+        </video>
 
-    <div class="page">
-      <HeaderComponent/>
-      <AboutComponent/>
-      <ServiceComponent/>
-      <ServiceQualityComponent/>
-      <OrderComponent/>
-      <DeliveryComponent/>
-      <FeedbackComponent/>
-      <PricesComponent/>
-      <BrandComponent/>
-      <ContactComponent/>
-      <FooterComponent/>
+        <div class="page">
+            <HeaderComponent/>
+            <AboutComponent/>
+            <ServiceComponent/>
+            <ServiceQualityComponent/>
+            <OrderComponent/>
+            <DeliveryComponent/>
+            <FeedbackComponent/>
+            <PricesComponent/>
+            <BrandComponent/>
+            <ContactComponent/>
+            <FooterComponent/>
+        </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -37,19 +37,19 @@ import ContactComponent from "@/components/ContactComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 
 @Options({
-  components: {
-    HeaderComponent,
-    AboutComponent,
-    ServiceComponent,
-    ServiceQualityComponent,
-    OrderComponent,
-    DeliveryComponent,
-    FeedbackComponent,
-    PricesComponent,
-    BrandComponent,
-    ContactComponent,
-    FooterComponent,
-  }
+    components: {
+        HeaderComponent,
+        AboutComponent,
+        ServiceComponent,
+        ServiceQualityComponent,
+        OrderComponent,
+        DeliveryComponent,
+        FeedbackComponent,
+        PricesComponent,
+        BrandComponent,
+        ContactComponent,
+        FooterComponent,
+    }
 })
 export default class Index extends Vue {
 

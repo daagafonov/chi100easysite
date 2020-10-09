@@ -1,9 +1,9 @@
 <template>
-  <div id="wrapper1" class="wrapper">
-    <div id="content1" class="content">
-      <slot/>
+    <div id="wrapper1" class="wrapper">
+        <div id="content1" class="content">
+            <slot/>
+        </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts">

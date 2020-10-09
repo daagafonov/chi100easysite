@@ -1,9 +1,9 @@
 <template>
-  <div class="app">
-    <component :is="layout">
-      <router-view></router-view>
-    </component>
-  </div>
+    <div class="app">
+        <component :is="layout">
+            <router-view></router-view>
+        </component>
+    </div>
 </template>
 
 <script lang="ts">
@@ -12,14 +12,12 @@ import {Options, Vue} from "vue-class-component";
 const defaultLayout = "default";
 
 @Options({
-  components: {
-    // Index
-  }
+    components: {}
 })
 export default class App extends Vue {
-  get layout() {
-    return `${this.$route.meta.layout || defaultLayout}-layout`;
-  }
+    get layout() {
+        return `${this.$route.meta.layout || defaultLayout}-layout`;
+    }
 }
 </script>
 
