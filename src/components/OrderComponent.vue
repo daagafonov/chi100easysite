@@ -28,9 +28,7 @@
 <script lang="ts">
 import {Options, Vue} from "vue-class-component";
 
-@Options({
-
-})
+@Options({})
 export default class OrderComponent extends Vue {
 
 }

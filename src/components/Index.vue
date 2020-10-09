@@ -7,17 +7,17 @@
     </video>
 
     <div class="page">
-      <HeaderComponent />
-      <AboutComponent />
-      <ServiceComponent />
-      <ServiceQualityComponent />
-      <OrderComponent />
-      <DeliveryComponent />
-      <FeedbackComponent />
-      <PricesComponent />
-      <BrandComponent />
-      <ContactComponent />
-      <FooterComponent />
+      <HeaderComponent/>
+      <AboutComponent/>
+      <ServiceComponent/>
+      <ServiceQualityComponent/>
+      <OrderComponent/>
+      <DeliveryComponent/>
+      <FeedbackComponent/>
+      <PricesComponent/>
+      <BrandComponent/>
+      <ContactComponent/>
+      <FooterComponent/>
     </div>
   </div>
 </template>

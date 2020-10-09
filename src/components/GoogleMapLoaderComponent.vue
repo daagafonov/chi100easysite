@@ -22,34 +22,34 @@ export default class GoogleMapLoaderComponent extends Vue {
       const mapElem = document.getElementById('map');
       if (mapElem) {
         const locations = [{
-            "title": "ул. Васильковская, 3",
-            "address": "Vasylkivska St, 3, Kyiv, Ukraine",
-            "desc": "",
-            "tel": "+380673202777",
-            "int_tel": "",
-            "email": "",
-            "web": "",
-            "web_formatted": "",
-            "open": "",
-            "time": "2104",
-            "lat": 50.396033,
-            "lng": 30.5061647,
-            "vicinity": "Holosiivs'kyi district",
-            "open_hours": "",
-            "iw": {
-              "address": true,
-              "desc": true,
-              "email": true,
-              "enable": true,
-              "int_tel": true,
-              "open": true,
-              "open_hours": true,
-              "photo": true,
-              "tel": true,
-              "title": true,
-              "web": true
-            }
-          },
+          "title": "ул. Васильковская, 3",
+          "address": "Vasylkivska St, 3, Kyiv, Ukraine",
+          "desc": "",
+          "tel": "+380673202777",
+          "int_tel": "",
+          "email": "",
+          "web": "",
+          "web_formatted": "",
+          "open": "",
+          "time": "2104",
+          "lat": 50.396033,
+          "lng": 30.5061647,
+          "vicinity": "Holosiivs'kyi district",
+          "open_hours": "",
+          "iw": {
+            "address": true,
+            "desc": true,
+            "email": true,
+            "enable": true,
+            "int_tel": true,
+            "open": true,
+            "open_hours": true,
+            "photo": true,
+            "tel": true,
+            "title": true,
+            "web": true
+          }
+        },
           {
             "title": "ул. Днепровська набережная, 19-А (1 подъезд)",
             "address": "Dniprovs'ka embankment, 19А, Kyiv, Ukraine",
@@ -78,7 +78,7 @@ export default class GoogleMapLoaderComponent extends Vue {
               "title": true,
               "web": true
             }
-        }];
+          }];
 
         const map = new google.maps.Map(mapElem, {
           center: {lat: 50.410093, lng: 30.564298},
@@ -96,7 +96,7 @@ export default class GoogleMapLoaderComponent extends Vue {
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
-        for (let  i = 0; i< locations.length; i++) {
+        for (let i = 0; i < locations.length; i++) {
           const loc = locations[i];
           new google.maps.Marker({
             // icon: loc.marker,

@@ -1,15 +1,15 @@
 <template>
   <div id="wrapper1" class="wrapper">
     <div id="content1" class="content">
-      <slot />
+      <slot/>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import {Options, Vue} from "vue-class-component";
-@Options({
-})
+
+@Options({})
 export default class Default1Layout extends Vue {
 
 }
