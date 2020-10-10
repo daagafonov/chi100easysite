@@ -11,7 +11,7 @@ services:
     restart: always
     container_name: site
     volumes:
-      - ./public/static/prod/app.config.json:/app/static/app.config.json
+      - ./public/static/app.config.json:/app/static/app.config.json
     ports:
       - 9000:8080
 

@@ -9,9 +9,18 @@ import Default1Layout from "@/layouts/default1.vue";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.esm.min';
 
-createApp(App)
-    .component("default-layout", DefaultLayout)
-    .component("default1-layout", Default1Layout)
-    .use(router)
-    .use(store)
-    .mount('#app');
+import axios from 'axios';
+import {Vue} from "vue-class-component";
+import {appConfig} from "@/services/AppConfig";
+
+appConfig.init(() => {
+    createApp(App)
+        .component("default-layout", DefaultLayout)
+        .component("default1-layout", Default1Layout)
+        .use(router)
+        .use(store)
+        .mount('#app');
+});
+
+
+
