@@ -12,7 +12,7 @@
                     <img width="45" src="images/sviter.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>120</span> ГРН
+                    ОТ <span>165</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -23,7 +23,7 @@
                     <img width="47" src="images/skirt.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>115</span> ГРН
+                    ОТ <span>175</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -34,7 +34,7 @@
                     <img src="images/lingerie.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>100</span> ГРН (за кг)
+                    ОТ <span>165</span> ГРН (за кг)
                 </div>
             </div>
             <div class="prices-item">
@@ -45,7 +45,7 @@
                     <img src="images/upper-cloth.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>180</span> ГРН
+                    ОТ <span>345</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -56,7 +56,7 @@
                     <img src="images/home-cloth.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>50</span> ГРН
+                    ОТ <span>115</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -67,7 +67,7 @@
                     <img src="images/bed.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>160</span> ГРН
+                    ОТ <span>200</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -78,7 +78,7 @@
                     <img src="images/noun_1473.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>95</span> ГРН
+                    ОТ <span>150</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -89,7 +89,7 @@
                     <img src="images/evening-dress.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>770</span> ГРН
+                    ОТ <span>950</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -100,7 +100,7 @@
                     <img src="images/costume.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>240</span> ГРН
+                    ОТ <span>350</span> ГРН
                 </div>
             </div>
             <div class="prices-item">
@@ -111,7 +111,7 @@
                     <img src="images/pants.png" alt="">
                 </div>
                 <div class="price-item-cost">
-                    ОТ <span>105</span> ГРН
+                    ОТ <span>160</span> ГРН
                 </div>
             </div>
         </div>
