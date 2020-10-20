@@ -77,6 +77,33 @@ export default class GoogleMapLoaderComponent extends Vue {
                         "title": true,
                         "web": true
                     }
+                }, {
+                    "title": "вулиця Уляни Громової, 5, Київ",
+                    "address": "Ulyany Gromovoy, 5, Kyiv, Ukraine",
+                    "desc": "",
+                    "tel": "+380962050007",
+                    "int_tel": "",
+                    "email": "",
+                    "web": "",
+                    "web_formatted": "",
+                    "open": "",
+                    "time": "2104",
+                    "lat": 50.4191024,
+                    "lng": 30.4732924,
+                    "open_hours": "",
+                    "iw": {
+                        "address": true,
+                        "desc": true,
+                        "email": true,
+                        "enable": true,
+                        // "int_tel": true,
+                        "open": true,
+                        // "open_hours": true,
+                        // "photo": true,
+                        "tel": true,
+                        "title": true,
+                        "web": true
+                    }
                 }];
 
                 const map = new google.maps.Map(mapElem, {
