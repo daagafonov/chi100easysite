@@ -107,7 +107,7 @@ export default class GoogleMapLoaderComponent extends Vue {
                 }];
 
                 const map = new google.maps.Map(mapElem, {
-                    center: {lat: 50.410093, lng: 30.564298},
+                    center: {lat: 50.4188982, lng: 30.4991586},
                     zoom: 13,
                     gestureHandling: 'auto',
                     fullscreenControl: false,
