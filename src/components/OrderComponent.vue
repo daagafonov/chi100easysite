@@ -10,46 +10,58 @@
                 </p>
             </div>
             <div class="service-registration-form">
-                <form action="">
-                </form>
                 <form action="" method="post" id="cForm1" role="form" onsubmit="return false;">
-                    <input type="text" id="posName" placeholder="ИМЯ" v-model="orderName">
-                    <input type="tel" id="posPhone" placeholder="ТЕЛЕФОН" v-model="orderPhone">
-                    <button type="submit" id="send" class="btn" @click="makeOrder">ЗАКАЗАТЬ</button>
-                    <div class="load-block">
-                        <div align="center" id="loadBar"></div>
-                    </div>
+                    <input type="text" id="posName" placeholder="ИМЯ" v-model="form.orderName">
+                    <input type="tel" id="posPhone" placeholder="ТЕЛЕФОН" v-model="form.orderPhone">
+                    <button type="submit" class="btn" @click="makeOrder($event)" :disabled="formSubmitionState">{{buttonCaption}}</button>
                 </form>
             </div>
         </div>
     </div>
 </template>
 
-<script lang="ts">
-import {Options, Vue} from "vue-class-component";
+<script>
+
+import EventService from "@/services/event.service.ts";
 import {useStore} from "vuex";
 
-@Options({})
-export default class OrderComponent extends Vue {
-
-    public orderName: string = '';
-    public orderPhone: string = '';
-
-    store = useStore();
-
+export default {
+    props: {
+        store: useStore(),
+    },
     data() {
-        return {};
-    }
+        return {
+            form: {
+                orderName: '',
+                orderPhone: '',
+            },
+            formSubmitionState: false,
+            buttonCaption: 'ЗАКАЗАТЬ',
+        };
+    },
+    created() {
+        EventService.subscribeEvent('makeOrderSuccess', (payload) => {
 
-    beforeCreate() {
-        console.log('store=', this.store);
-    }
+            this.buttonCaption = 'ВАШ ЗАПРОС ПРИНЯТ. ОЖИДАЙТЕ!';
+            this.clearForm();
 
-    makeOrder(event: any) {
-        this.store.dispatch('makeOrder', {
-            name: this.orderName,
-            phone: this.orderPhone,
         });
+    },
+    methods: {
+        makeOrder(event) {
+            if (this.form.orderName !== '' && this.form.orderPhone) {
+                this.formSubmitionState = true;
+                this.$store.dispatch('makeOrder', {
+                    name: this.form.orderName,
+                    phone: this.form.orderPhone,
+                });
+            }
+        },
+        clearForm() {
+            this.form.orderName = '';
+            this.form.orderPhone = '';
+        }
     }
+
 }
 </script>
