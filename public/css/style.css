@@ -546,6 +546,7 @@ p.medium-weight {
 .service-registration-form button {
     background-color: #314668;
     color: #fff;
+    font-weight: bold;
 }
 
 .service-registration-form button:hover {
