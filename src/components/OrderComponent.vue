@@ -11,9 +11,10 @@
             </div>
             <div class="service-registration-form">
                 <form action="" method="post" id="cForm1" role="form" onsubmit="return false;">
-                    <input type="text" id="posName" placeholder="ИМЯ" v-model="form.orderName">
-                    <input type="tel" id="posPhone" placeholder="ТЕЛЕФОН" v-model="form.orderPhone">
-                    <button type="submit" class="btn" @click="makeOrder($event)" :disabled="formSubmitionState">{{buttonCaption}}</button>
+                    <input type="text" id="posName" placeholder="ИМЯ" v-model="form.orderName" maxlength="30">
+                    <input type="tel" id="posPhone" placeholder="ТЕЛЕФОН (+380...)" v-model="form.orderPhone" maxlength="13">
+                    <input type="submit" class="btn" :class="{ 'btn-warning': formValid(), 'btn-success': !formValid(), 'disabled': formValid()}" @click="makeOrder($event)"  v-model="buttonCaption" />
+
                 </form>
             </div>
         </div>
@@ -25,6 +26,8 @@
 import EventService from "@/services/event.service.ts";
 import {useStore} from "vuex";
 
+const phoneRegex = /^(\+38)?\d{10}$/;
+
 export default {
     props: {
         store: useStore(),
@@ -35,7 +38,7 @@ export default {
                 orderName: '',
                 orderPhone: '',
             },
-            formSubmitionState: false,
+            formSubmitionState: true,
             buttonCaption: 'ЗАКАЗАТЬ',
         };
     },
@@ -48,14 +51,17 @@ export default {
         });
     },
     methods: {
+        formValid() {
+            return !(this.form.orderName.trim() !== '' && this.form.orderName.trim().length >= 3 && this.form.orderPhone.trim() !== '' && phoneRegex.test(this.form.orderPhone));
+        },
         makeOrder(event) {
-            if (this.form.orderName !== '' && this.form.orderPhone) {
-                this.formSubmitionState = true;
-                this.$store.dispatch('makeOrder', {
-                    name: this.form.orderName,
-                    phone: this.form.orderPhone,
-                });
-            }
+
+            this.formSubmitionState = true;
+            this.$store.dispatch('makeOrder', {
+                name: this.form.orderName,
+                phone: this.form.orderPhone,
+            });
+
         },
         clearForm() {
             this.form.orderName = '';
@@ -65,3 +71,11 @@ export default {
 
 }
 </script>
+
+<style>
+
+.btn-warning.disabled, .btn-warning:disabled {
+    font-weight: bold !important;
+}
+
+</style>
