@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="full-price-list">
-            <a href="prices.xls" download="price">Скачать прайс</a>
+            <a href="prices.xls" download>Скачать прайс</a>
         </div>
     </div>
 </template>
