@@ -14,7 +14,6 @@
                     <input type="text" id="posName" placeholder="ИМЯ" v-model="form.orderName" maxlength="30">
                     <input type="tel" id="posPhone" placeholder="ТЕЛЕФОН (+380...)" v-model="form.orderPhone" maxlength="13">
                     <input type="submit" class="btn" :class="{ 'btn-warning': formValid(), 'btn-success': !formValid(), 'disabled': formValid()}" @click="makeOrder($event)"  v-model="buttonCaption" />
-
                 </form>
             </div>
         </div>

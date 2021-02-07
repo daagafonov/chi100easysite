@@ -1,8 +1,8 @@
 <template>
     <div class="bot" id="bot">
         <div class="row">
-            <div class="col-12">
-                Чисто Просто Бот
+            <div class="col-12 text">
+                У нас появился новый помощник - чат-бот
             </div>
         </div>
         <div class="row">
@@ -12,7 +12,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <img src="images/qrcode.59572609.png" />
+                <img width="400px" src="images/qrcode.59572609.png" />
             </div>
         </div>
         <div class="row">
@@ -25,7 +25,7 @@
 <script lang="ts">
 import {Options, Vue} from "vue-class-component";
 @Options({})
-export default class BotComponent extends Vue {
+export default class BotComponent2 extends Vue {
 
 }
 </script>
@@ -35,8 +35,18 @@ export default class BotComponent extends Vue {
     text-align: center;
     background-color: white;
 
+    .text {
+        text-transform: uppercase;
+        font-size: +20pt;
+        font-weight: 300;
+        color: #314668;
+        margin: 10px 0;
+    }
+
     .telegram {
         width: 55px;
     }
 }
+
+
 </style>

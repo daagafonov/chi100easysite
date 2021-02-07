@@ -13,6 +13,7 @@
             <ServiceQualityComponent/>
             <OrderComponent/>
             <DeliveryComponent/>
+            <BotComponent2/>
             <FeedbackComponent/>
             <PricesComponent/>
             <BrandComponent/>
@@ -35,6 +36,7 @@ import PricesComponent from "./PricesComponent.vue";
 import BrandComponent from "./BrandComponent.vue";
 import ContactComponent from "@/components/ContactComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import BotComponent2 from "@/components/BotComponent2.vue";
 
 @Options({
     components: {
@@ -49,6 +51,7 @@ import FooterComponent from "@/components/FooterComponent.vue";
         BrandComponent,
         ContactComponent,
         FooterComponent,
+        BotComponent2,
     }
 })
 export default class Index extends Vue {

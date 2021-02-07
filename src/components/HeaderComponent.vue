@@ -24,6 +24,7 @@
                             <li class="nav-item"><a class="nav-link" href="#brand">БРЕНДЫ</a></li>
                             <li class="nav-item"><a class="nav-link" href="#order">ЗАКАЗ</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contact">КОНТАКТЫ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#bot">ЧАТ-БОТ</a></li>
                         </ul>
                     </div>
                 </div>
