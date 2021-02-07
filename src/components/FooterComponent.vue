@@ -23,6 +23,7 @@
                 <li class=""><a href="#deliver">ДОСТАВКА</a></li>
                 <li class=""><a href="#cost">СТОИМОСТЬ</a></li>
                 <li class=""><a href="#contact">КОНТАКТЫ</a></li>
+                <li class=""><a href="#bot">ЧАТ-БОТ</a></li>
             </ul>
         </div>
     </div>
